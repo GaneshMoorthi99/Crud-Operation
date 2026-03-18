@@ -1,0 +1,26 @@
+﻿@model Crud.Models.Employe;
+
+<form asp-action="Edit" method="get">
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label>Empcode</label>
+        <input asp-for="Empcode"">
+    </div>
+    <div>
+        <label>Createdat</label>
+        <input asp-for="Createdat" />
+    </div>
+    <div>
+        <label>Isactive</label>
+        <input asp-for="Isactive" type="checkbox" />
+    </div>
+    <button type="submit" asp-action="Update">Update</button>
+    <button type="submit" asp-action="Delete">Delete</button>
+</form>

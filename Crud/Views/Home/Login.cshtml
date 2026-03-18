@@ -1,0 +1,17 @@
+﻿@model Crud.Models.Employe;
+
+
+<form asp-action="LoginData" method="post">
+   
+     <div>
+        <label>Empcode</label>
+        <input asp-for="Empcode" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" />
+    </div>
+ 
+
+    <button type="submit">Login</button>
+</form>

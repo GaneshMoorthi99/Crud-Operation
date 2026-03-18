@@ -1,0 +1,26 @@
+﻿@model Crud.Models.Employe;
+
+<form asp-action="SaveData" method="post">
+   <div>
+       <label>Name</label>
+       <input asp-for="Name" />
+   </div>
+    <div>
+       <label>Email</label>
+       <input asp-for="Email" />
+   </div>
+    <div>
+       <label>Empcode</label>
+       <input asp-for="Empcode" />
+   </div>
+    <div>
+       <label>Createdat</label>
+       <input asp-for="Createdat" type="datetime-local" />
+   </div>
+    <div>
+        <label>Isactive</label>
+        <input asp-for="Isactive" type="checkbox"/>
+    </div>
+
+    <button type="submit">Sumbit</button> 
+</form>
